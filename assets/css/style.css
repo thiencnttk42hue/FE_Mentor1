@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.header__menu__item {
+    padding: 5px 0;
+}
+
+.header__menu__link {
+    text-decoration: none;
+    padding: 0 15px;
+    color: hsl(236, 13%, 42%);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.header__menu__item:hover .header__menu__link {
+    color: hsl(5, 85%, 63%);
+}
+
+.container {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.bright {
+    font-size: 50px;
+}
+
+.we__dive {
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.btn {
+    margin-top: 20px;
+    border: none;
+    padding: 12px 26px;
+    color: hsl(36, 100%, 99%);
+    font-size: 16px;
+    letter-spacing: 4px;
+    background-color: hsl(5, 85%, 63%);
+}
+
+.btn:hover {
+    background: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.new {
+    background-color: hsl(240, 100%, 5%);
+    width: 100%;
+    margin: 0 12px;
+    padding: 21px 0;
+}
+
+.title {
+    font-size: 36px;
+    color: hsl(35, 77%, 62%);
+    margin: 5px 0 30px;
+}
+
+.title__cap {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.title__cap:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.title__desc {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 33px;
+}
+
+.col-has__bdr {
+    border-bottom: 1px solid #fff;
+}
+
+.categories {
+    display: flex;
+}
+
+.category__img {
+    object-fit: cover;
+}
+
+.category__body {
+    padding-left: 20px;
+}
+
+.category__stt {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.category-title {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.category-title:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.category__desc {
+    margin-top: 15px;
+}
