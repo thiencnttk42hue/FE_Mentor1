@@ -1,0 +1,129 @@
+/* Mobile & Tablet */
+
+@media (max-width:1023px) {}
+
+.categories-wrap {
+    margin: 40px 0;
+}
+
+.category__has-mb {
+    margin: 0 -4px 10px;
+}
+
+
+/*  Tablet */
+
+@media (min-width:740px) and (max-width:1023px) {
+    .modal-menu-mobile {
+        display: none;
+    }
+    .modal-menu-mobile-container {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width:739px) {
+    @keyframes fakeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .header {
+        margin: 30px 8px 0 8px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__menu-icon {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+    }
+    .container {
+        margin-top: 0;
+        padding: 0 8px;
+    }
+    .new {
+        margin: 0 4px;
+    }
+    .banner {
+        margin-top: 15px;
+    }
+    .banner-desktop {
+        display: none;
+    }
+    .banner-mobile {
+        width: 100%;
+        display: block;
+    }
+    .bright {
+        margin: 15px 0;
+    }
+    .btn {
+        margin-bottom: 50px;
+    }
+    .category__body {
+        padding-left: 5px;
+    }
+    .modal-menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 10;
+        display: none;
+        /* animation: fakeIn linear 0.4s; */
+    }
+    .modal-menu-mobile.close {
+        display: block;
+    }
+    .modal-menu-mobile-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        background-color: #fff;
+        z-index: 20;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform linear 2s, opacity linear 2s;
+        display: none;
+    }
+    .modal-menu-mobile-container.close {
+        transform: translateX(0);
+        opacity: 1;
+        display: block;
+    }
+    .modal-menu-mobile-close {
+        margin: 30px 15px;
+        position: relative;
+        display: block;
+    }
+    .modal-menu-mobile-close-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .modal-menu-mobile-list {
+        list-style: none;
+        padding-top: 30px;
+    }
+    .modal-menu-mobile-item {
+        padding: 15px 20px;
+    }
+    .modal-menu-mobile-item-link {
+        text-decoration: none;
+        font-size: 16px;
+        color: #000;
+        text-transform: capitalize;
+    }
+}
