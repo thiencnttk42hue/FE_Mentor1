@@ -17,6 +17,7 @@ body {
 }
 
 .header {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +26,10 @@ body {
 .header__logo {
     cursor: pointer;
     text-decoration: none;
+}
+
+.header__menu-icon {
+    display: none;
 }
 
 .header__menu {
@@ -55,8 +60,12 @@ body {
     width: 100%;
 }
 
-.banner {
+.banner-desktop {
     width: 100%;
+}
+
+.banner-mobile {
+    display: none;
 }
 
 .bright {
@@ -153,4 +162,8 @@ body {
 
 .category__desc {
     margin-top: 15px;
+}
+
+.modal-menu-mobile {
+    display: none;
 }
